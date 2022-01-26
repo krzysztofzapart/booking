@@ -1,5 +1,6 @@
 package pl.kzapart.booking.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import pl.kzapart.booking.model.Apartment;
@@ -15,6 +16,7 @@ import javax.persistence.OneToOne;
 @Getter
 public class ReservationRequest {
 
+    private Long reservationID;
     private int rentalPeriod;
     private long tenantID;
     private long landlordID;

@@ -4,7 +4,7 @@ DROP TABLE IF EXISTS tenant;
 DROP TABLE IF EXISTS landlord;
 
 CREATE TABLE apartment (
-  apartmentid BIGINT NOT NULL auto_increment,
+  apartmentid BIGINT NOT NULL AUTO_INCREMENT,
   price DOUBLE NULL,
   living_area DOUBLE NULL,
   description VARCHAR(255) NULL,
@@ -12,17 +12,17 @@ CREATE TABLE apartment (
 );
 
 CREATE TABLE tenant (
-  tenantid BIGINT NOT NULL auto_increment,
+  tenantid BIGINT NOT NULL AUTO_INCREMENT,
   name VARCHAR(255) NULL,
   CONSTRAINT pk_tenant PRIMARY KEY (tenantid)
 );
 CREATE TABLE landlord (
-  landlordid BIGINT NOT NULL,
+  landlordid BIGINT NOT NULL AUTO_INCREMENT,
   name VARCHAR(255) NULL,
   CONSTRAINT pk_landlord PRIMARY KEY (landlordid)
 );
 CREATE TABLE reservation (
-  reservationid BIGINT NOT NULL,
+  reservationid BIGINT NOT NULL AUTO_INCREMENT,
   rental_period INT NULL,
   costs DOUBLE NULL,
   tenantid BIGINT NOT NULL,
