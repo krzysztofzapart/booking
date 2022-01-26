@@ -13,4 +13,5 @@ insert into apartment(apartmentID, price, living_area, description) VALUES (NULL
 
 insert into reservation(reservationID,rental_period, costs, tenantID, landlordID, apartmentID) VALUES (NULL,90,1250.0,1,3,1);
 insert into reservation(reservationID,rental_period, costs, tenantID, landlordID,apartmentID) VALUES (NULL,20,850.0,3,2,2);
+insert into reservation(reservationID,rental_period, costs, tenantID, landlordID,apartmentID) VALUES (NULL,50,1500.0,3,1,4);
 

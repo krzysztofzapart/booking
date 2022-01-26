@@ -1,6 +1,7 @@
 package pl.kzapart.booking.service;
 
 import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import pl.kzapart.booking.dto.ReservationRequest;
@@ -51,7 +52,6 @@ public class ReservationService {
     {
         Tenant tenant = tenantRepository.findByName(name);
         List<Reservation> reservationList = reservationRepository.findByTenantID(tenant);
-
         return reservationList;
     }
 

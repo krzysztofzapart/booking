@@ -1,5 +1,6 @@
 package pl.kzapart.booking.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -11,6 +12,7 @@ import java.util.List;
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
 public class Reservation {
 
     @Id
@@ -30,4 +32,6 @@ public class Reservation {
     @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "apartmentID")
     private Apartment apartmentID;
+
+
 }
